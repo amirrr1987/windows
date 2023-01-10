@@ -1,85 +1,61 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+    <div
+      class="grid grid-rows-[3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem] grid-cols-[3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem,3rem]  gap-8 p-2 overflow-hidden">
+      <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/RecycleBin.png" alt="">
+      <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/file-explorer.png" alt="">
+      <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/code.png" alt=""><img
+        src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/anydesk.png" alt="">
+      <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/file-explorer.png" alt="">
+      <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/code.png" alt=""><img
+        src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/Google_Chrome.png" alt="">
+      <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/file-explorer.png" alt="">
+      <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/code.png" alt=""><img
+        src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/Google_Chrome.png" alt="">
+      <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/file-explorer.png" alt="">
+      <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/code.png" alt=""><img
+        src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/Google_Chrome.png" alt="">
+      <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/file-explorer.png" alt="">
+      <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/code.png" alt=""><img
+        src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/Google_Chrome.png" alt="">
+  
+  
     </div>
-  </header>
-
-  <RouterView />
+    <div class="navbar">
+      <button class="navbar__start">
+        <iconify-icon class="text-2xl" icon="gg:windows"></iconify-icon>
+      </button>
+      <div class="bg-white w-[21.5rem] grid grid-cols-[2rem,1fr] gap-x-1 pr-4 items-center text-gray-500">
+        <iconify-icon class="text-2xl m-auto" icon="ic:outline-search" flip="horizontal"></iconify-icon>
+        <input type="search" name="" id="" class="h-full focus-visible:outline-0" placeholder="Type here to search">
+      </div>
+      <button class="aspect-square	h-full flex justify-center items-center">
+        <iconify-icon class="text-white text-xl" icon="fluent-mdl2:taskboard" flip="horizontal"></iconify-icon>
+      </button>
+      <div class="flex gap-x-4 p-2">
+        <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/Google_Chrome.png" alt="">
+        <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/file-explorer.png" alt="">
+        <img src="https://zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/code.png" alt="">
+      </div>
+    </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+<style>
+#app {
+  background-image: url("https: //zeinab-rezaei-web.github.io/Windows-10-Simulation/asset/img/windows-10-wallpaper.jpg");
+    display: grid;
+    grid-template-rows: 1fr -webkit-max-content;
+    grid-template-rows: 1fr max-content;
+    height: 100svh;
+}
+.navbar__start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  aspect-ratio: 1/1;
+  height: 100%;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-}
+/*# sourceMappingURL=index.css.map */
 </style>
